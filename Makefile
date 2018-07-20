@@ -4,4 +4,4 @@ install:
 
 .PHONY: test
 test:
-	python3 -m unittest discover
+	python3 -m unittest discover -b -v
