@@ -28,7 +28,7 @@ ANSWERS = [
 class GuessingGame:
     def __init__(self, word_list, total_lives = 5):
         self.answer = random.choice(word_list)
-        self.user_guess = ['?' for char in self.answer]
+        self.user_guess = ['?' for _ in self.answer]
         self.correct_count = 0
 
         self.total_lives = total_lives
