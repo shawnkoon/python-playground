@@ -24,5 +24,8 @@ def create_app(test_config=None):
     def _hello():
         return 'Hello! this is Shawnkoon!'
 
+    from . import db
+    db.init_app(app)
+
     return app
 

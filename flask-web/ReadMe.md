@@ -31,6 +31,15 @@ $ pip install -r requirements.txt
 
 ## Execution
 
+1. Create DB.
+  - Will be using sqlite.
+```bash
+$ make init-db
+Executing flask with DB initialization command...
+FLASK_APP=flaskr FLASK_ENV=production flask init-db
+Successfully initialized the Database :)
+```
+
 1. Use Makefile.
 ```bash
 $ make run-dev
@@ -40,4 +49,4 @@ or
 $ make run-prod
 ```
 
-2. Visit/access `http://127.0.0.1:5000/hello` to check if api is running.
+1. Visit/access `http://127.0.0.1:5000/hello` to check if api is running.
