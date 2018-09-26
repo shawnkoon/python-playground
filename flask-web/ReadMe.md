@@ -42,7 +42,7 @@ Successfully initialized the Database :)
 
 2. Use Makefile.
 ```bash
-$ make run-dev
+$ make init-db && make run-dev
 
 or
 
