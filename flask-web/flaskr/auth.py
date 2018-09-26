@@ -42,7 +42,7 @@ def register():
     return render_template('auth/register.html')
 
 
-@blue_print.route('/login', method=('GET', 'POST'))
+@blue_print.route('/login', methods=('GET', 'POST'))
 def login():
     if request.method == 'POST':
         username = request.form['username']
