@@ -40,7 +40,7 @@ FLASK_APP=flaskr FLASK_ENV=production flask init-db
 Successfully initialized the Database :)
 ```
 
-1. Use Makefile.
+2. Use Makefile.
 ```bash
 $ make run-dev
 
@@ -49,4 +49,6 @@ or
 $ make run-prod
 ```
 
-1. Visit/access `http://127.0.0.1:5000/hello` to check if api is running.
+3. Visit/access pages to check if flask-web application is running.
+  - `http://127.0.0.1:5000/auth/register`
+  - `http://127.0.0.1:5000/hello`
