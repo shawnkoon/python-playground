@@ -1,24 +1,24 @@
 run-dev:
-	@cho
-	@echo 'Executing flask with Development settings...'
-	FLASK_APP=flaskr FLASK_ENV=development flask run
 	@echo
+	@echo '[+] Executing flask with Development settings...'
+	@echo
+	FLASK_APP=flaskr FLASK_ENV=development flask run
 
 run-prod: init-db
 	@echo
-	@echo 'Executing flask with Production settings...'
-	FLASK_APP=flaskr FLASK_ENV=production flask run
+	@echo '[+] Executing flask with Production settings...'
 	@echo
+	FLASK_APP=flaskr FLASK_ENV=production flask run
 
 init-db:
 	@echo
-	@echo 'Executing flask with DB initialization command...'
-	FLASK_APP=flaskr FLASK_ENV=production flask init-db
+	@echo '[+] Executing flask with DB initialization command...'
 	@echo
+	FLASK_APP=flaskr FLASK_ENV=production flask init-db
 
 dev-deploy:
 	@echo
-	@echo 'Creating/downloading development version of the app...'
+	@echo '[+] Creating/downloading development version of the app...'
 	@echo
 
 .PHONY: run-dev run-prod init-db dev-deploy
