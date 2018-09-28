@@ -52,3 +52,9 @@ $ make run-prod
 3. Visit/access pages to check if flask-web application is running.
   - `http://127.0.0.1:5000/auth/register`
   - `http://127.0.0.1:5000/hello`
+
+## Misc
+
+- To build/download development deployable package.
+  - Execute `$ make dev-deploy`.
+  - Check with `pip list` && `./shawnkoon_flask_web.egg-info`.
