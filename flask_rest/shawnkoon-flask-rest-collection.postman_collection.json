@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "20911fe2-e1cf-4619-b1b6-336b2c192c4b",
+		"name": "shawnkoon-flask-rest-collection",
+		"description": "Flask Restful API collection.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Item",
+			"item": [
+				{
+					"name": "Get All Items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:5050/items",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"items"
+							]
+						},
+						"description": "Get All Items"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Item By Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:5050/items/{{name}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"items",
+								"{{name}}"
+							]
+						},
+						"description": "Get Specific Item by name"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Item By Name",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"price\": 15.99\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5050/items/{{name}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"items",
+								"{{name}}"
+							]
+						},
+						"description": "Create Specific Item by Name."
+					},
+					"response": []
+				},
+				{
+					"name": "Update Item By Name",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"price\": 99.11\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5050/items/{{name}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"items",
+								"{{name}}"
+							]
+						},
+						"description": "Update/Create Specific Item by Name."
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Item By Name",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"price\": 15.99,\n\t\"name\": \"Shawnkoon-item\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5050/items/{{name}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"items",
+								"{{name}}"
+							]
+						},
+						"description": "Create Specific Item"
+					},
+					"response": []
+				}
+			],
+			"description": "Item related endpoints."
+		}
+	]
+}
